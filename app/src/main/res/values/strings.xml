@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Goal</string>
+
+    <string name="title_activity_add_goal">添加目标</string>
+    <string name="title_activity_edit_goal">编辑目标</string>
+    <string name="action_discard_reminder">还原目标</string>
+    <string name="action_save_reminder">保存目标</string>
+</resources>

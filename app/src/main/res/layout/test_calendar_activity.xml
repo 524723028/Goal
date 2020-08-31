@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"/>
+        <TextView
+            android:id="@+id/day_message"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="2017年4月"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+        <ImageButton
+            android:id="@+id/right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right"/>
+
+
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:rowCount="1"
+        android:columnCount="7"
+        >
+        <TextView
+            android:text="日"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1" />
+
+        <TextView
+
+            android:text="一"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+        <TextView
+            android:text="二"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1"
+            />
+        <TextView
+            android:text="三"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+        <TextView
+            android:text="四"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <TextView
+            android:text="五"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+
+
+        <TextView
+            android:text="六"
+            android:layout_width="50dp"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_columnWeight="1"/>
+
+    </GridLayout>
+    <RelativeLayout
+        android:layout_marginTop="23dp"
+        android:id="@+id/calendar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/message_layout" >
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/calender_list_view"
+        android:layout_below="@+id/calendar_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent">
+    </ListView>
+</LinearLayout>
